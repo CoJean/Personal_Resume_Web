@@ -1,0 +1,6 @@
+$(document).ready(function() {
+  $(".skills-prog li").each(function() {
+    var newWidth = $(this).data("percent") + "%";
+    $(this).find(".bar").animate({ width: newWidth }, 1000);
+  });
+});
